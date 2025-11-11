@@ -1,0 +1,23 @@
+# Ignore Airflow and other container logs
+docker/airflow/logs/
+docker/airflow/logs/*
+
+# Ignore compiled / temporary files
+*.pyc
+__pycache__/
+
+# Ignore environment files
+.env
+*.log
+
+# Ignore data directories
+raw/
+processed/
+*.parquet
+
+# Ignore Spark temporary cache
+.spark/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
